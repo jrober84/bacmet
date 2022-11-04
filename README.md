@@ -6,8 +6,9 @@ This repository is provide a database of DNA sequences of BacMet for abricate an
 All plasmids from the MOB-suite v. 3.0.0 database were annotated using prokka v.14.5 "--compliant".
 The AA sequences were used as queries against the bacmet  protein queries with a minimum ident of 90% and coverage.
 The ids of the proteins were then mapped back to the DNA sequences and those were dereplicated using CD-HIT-EST at 95% coverage and ident of the smallest sequence
+Bacmet ID's which were not found with the process were manually searched in NCBI and the top match CDS sequence was selected
 
-#How to add to abricate
+# How to add to abricate
 copy the specific database version to the abricate db folder for your evironment
 ```
 cp -r database/confirmed_resistance_genes/2018-03-11-version-2/bacmet/ /path/to/abricate/db     
